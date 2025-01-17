@@ -13,7 +13,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     if ($num1 !== false && $num2 !== false) {
         $result = addition($num1, $num2);
 
-        // Ajouter l'opération dans l'historique des opérations
         $_SESSION['operations'][] = [
             'operation' => 'Addition',
             'number1' => $num1,
